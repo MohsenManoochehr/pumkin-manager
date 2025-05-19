@@ -5,10 +5,19 @@ function SignIn() {
   return (
     <div className="flex w-full justify-end relative">
       <div className="ps-20 flex flex-col absolute h-[80vh] left-0 justify-center w-[30%]">
-        <Image src="/pumpkin.png" width={300} height={300} alt="pumpkin" />
+        <Image
+          className="w-40 h-auto mb-2"
+          src="/pumpkin.png"
+          width={300}
+          height={300}
+          alt="pumpkin"
+        />
         <h1 className="text-5xl font-bold">Pumpkin Manager</h1>
         <p className="mt-2">
-          Sign in to your account with your <b>Secret Key</b>
+          Sign in to your account with your{" "}
+          <b className="text-red-600 hover:text-red-800">
+            <Link href="/info/secret-key">Secret Key</Link>
+          </b>
         </p>
         <div className="mt-10 flex flex-col gap-1">
           <label className="font-semibold text-[16px]">Email</label>
