@@ -10,6 +10,9 @@ module.exports = {
         sans: ["var(--font-open-sans)", "sans-serif"],
         mono: ["var(--font-geist-mono)", "monospace"],
       },
+      dropShadow: {
+        white: "0 0 8px 10px rgba(255, 255, 255, 0.7)", // custom white shadow
+      },
     },
   },
   plugins: [],
